@@ -14,11 +14,13 @@ public:
 	~Number();
 	string to_string();
 	void add(Number arg);
-	string remove_trailing_zeros(string str);
+	void subtract(Number arg);
 	
 
 private:
-	void add_to(string *s, int value, int position, int *times_extended);
 	string remove_leading_zeros(string str);
+	string remove_trailing_zeros(string str);
+	void add_to(string *s, int value, int position, int *times_extended);
+	int compare_numbers(string s1, string s2);
 };
 
