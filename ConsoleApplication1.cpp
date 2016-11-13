@@ -91,8 +91,11 @@ string subtract(string s1, string s2) {
 
 int main()
 {
-	string s2 = "69";
-	string s1 = "123";
-	cout << subtract(s1, s2) << endl;
+	Number n1("102.532");
+	Number n2("1000.000001");
+
+	n1.subtract(n2);
+
+	cout << n1.to_string() << endl;
 }
 
